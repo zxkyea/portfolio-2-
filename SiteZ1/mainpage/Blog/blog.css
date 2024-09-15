@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menubar{
+    background-color: #1C3C52;
+    text-align: center;
+    opacity: 0.9;
+   /* border-radius: 10px;*/
+}
+.menubar:hover{
+    color: #dcdcdc;
+}
+.menubar ul{
+    text-align: center;
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 155px;
+    margin: 10px;
+    padding: 15px;
+   
+}
+.menubar ul li a {
+text-decoration: none;
+color: white;
+}
+
+.menubar ul li:hover{
+    background-color:#3e89bb;
+    border-style:initial;
+    border-radius: 10px;
+}
+body {
+    background-image: url('/lake-6641880_1280.jpg'); /* Resmin URL'si */
+    background-size: cover; /* Resmi, sayfanın tamamına uyacak şekilde ölçeklendirir */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    height: 100vh; /* Sayfanın yüksekliğini tam ekran yapar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Metin rengini beyaz yapar */
+}
+
+
+.one{
+    font-size: larger;
+}
+.two{
+    padding-top: 15px;
+}
+.three{
+    padding-top: 10px;
+    border-style: initial;
+    background-color: rgba(101, 228, 112, 0.521);
+    border-radius: 10px;
+}
+body {
+    /* Sayfa yüklendiğinde animasyon başlasın */
+    animation: fadeIn 2s ease-out;
+}
+
+h1, h2, h3, p {
+    opacity: 0; /* Başlangıçta tamamen şeffaf */
+    transform: translateY(20px); /* Yukarıdan aşağıya geliyormuş gibi */
+    animation: ghost 1s ease-out forwards; /* 1 saniyelik animasyon */
+}
+
+h1 {
+    animation-delay: 0.5s; /* h1 etiketleri için 0.5 saniye gecikme */
+}
+
+h2 {
+    animation-delay: 1s; /* h2 etiketleri için 1 saniye gecikme */
+}
+
+h3 {
+    animation-delay: 1.5s; /* h3 etiketleri için 1.5 saniye gecikme */
+}
+
+p {
+    animation-delay: 2s; /* p etiketleri için 2 saniye gecikme */
+}
+
+/* ghost animasyonu */
+@keyframes ghost {
+    to {
+        opacity: 1; /* Tamamen görünür hale gelme */
+        transform: translateY(0); /* Normal pozisyona geri dönme */
+    }
+}
+
+/* Sayfa yüklenme animasyonu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

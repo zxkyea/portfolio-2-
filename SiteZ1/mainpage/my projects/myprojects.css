@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menubar{
+    background-color: #1C3C52;
+    text-align: center;
+    opacity: 0.9;
+   /* border-radius: 10px;*/
+}
+.menubar:hover{
+    color: #dcdcdc;
+}
+.menubar ul{
+    text-align: center;
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 155px;
+    margin: 10px;
+    padding: 15px;
+   
+}
+.menubar ul li a {
+text-decoration: none;
+color: white;
+}
+
+.menubar ul li:hover{
+    background-color:#3e89bb;
+    border-style:initial;
+    border-radius: 10px;
+}
+body {
+    background-image: url('/lake-6641880_1280.jpg'); /* Resmin URL'si */
+    background-size: cover; /* Resmi, sayfanın tamamına uyacak şekilde ölçeklendirir */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    height: 100vh; /* Sayfanın yüksekliğini tam ekran yapar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Metin rengini beyaz yapar */
+}
+
+.bas{
+    margin-top: 10px;
+   
+}
+.img{
+    margin-top: 20px;
+    float: inline-end;
+    margin-left: 10px;
+    width: 500px;
+    margin-right: 30px;
+}
+
+

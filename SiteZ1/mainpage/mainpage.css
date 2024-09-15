@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menubar{
+    background-color: #1C3C52;
+    text-align: center;
+    opacity: 0.9;
+   /* border-radius: 10px;*/
+}
+.menubar:hover{
+    color: #dcdcdc;
+}
+.menubar ul{
+    text-align: center;
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 155px;
+    margin: 10px;
+    padding: 15px;
+   
+}
+.menubar ul li a {
+text-decoration: none;
+color: white;
+}
+
+.menubar ul li:hover{
+    background-color:#3e89bb;
+    border-style:initial;
+    border-radius: 10px;
+}
+body {
+    background-image: url('/lake-6641880_1280.jpg'); /* Resmin URL'si */
+    background-size: cover; /* Resmi, sayfanın tamamına uyacak şekilde ölçeklendirir */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    height: 100vh; /* Sayfanın yüksekliğini tam ekran yapar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Metin rengini beyaz yapar */
+}
+
+
+.mainimg {
+    text-align: center;
+    margin-top: 5%;
+}
+.img{
+    border-radius: 10px;
+}
+.maintext{
+    text-align: center;
+}
+.mainbutton{
+    text-align: center;
+    margin-top: 5%;
+  
+    
+}
+.button{
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #1C3C52;
+    color: white;
+    
+}
+.a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    color: white;
+    background-color: #3e89bb;
+}
+
+.author{
+    margin-top: 10%;
+}
+.text{
+    opacity: 0.5;
+}
+.mainimg, .maintext, .mainbutton, .author {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.mainimg {
+    animation-delay: 0.5s;
+}
+
+.maintext:nth-of-type(1) {
+    animation-delay: 1s;
+}
+
+.maintext:nth-of-type(2) {
+    animation-delay: 1.5s;
+}
+
+.mainbutton {
+    animation-delay: 2s;
+}
+
+.author {
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.baslik {
+    color: #f1f1f1;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #508ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #21a1f1;
+}
+
+.author {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.text {
+    color: #999;
+}
+

@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menubar{
+    background-color: #1C3C52;
+    text-align: center;
+    opacity: 0.9;
+   /* border-radius: 10px;*/
+}
+.menubar:hover{
+    color: #dcdcdc;
+}
+.menubar ul{
+    text-align: center;
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 155px;
+    margin: 10px;
+    padding: 15px;
+   
+}
+.menubar ul li a {
+text-decoration: none;
+color: white;
+}
+
+.menubar ul li:hover{
+    background-color:#3e89bb;
+    border-style:initial;
+    border-radius: 10px;
+    
+}
+body {
+    background-image: url('/lake-6641880_1280.jpg'); /* Resmin URL'si */
+    background-size: cover; /* Resmi, sayfanın tamamına uyacak şekilde ölçeklendirir */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    height: 100vh; /* Sayfanın yüksekliğini tam ekran yapar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Metin rengini beyaz yapar */
+}
+
+
+
+.instagram{
+    padding-left: 380px;
+    padding-top: 150px;
+}
+.ininst{
+    width: 750px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #84c1e9;
+    cursor: pointer; /* İmleç üzerinde iken işaretçi */
+    border: none; /* Kenarlık kaldırma */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+.ininst:hover{
+    transform: scale(1.1); /* Hover sırasında %10 büyüme */
+    background-color: #4c8ae6; /* Hover sırasında renk değişimi */
+}
+.youtube{
+   padding-left: 380px;
+   padding-top: 15px;
+}
+.inyoutb{
+    width: 750px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #84c1e9;
+    cursor: pointer; /* İmleç üzerinde iken işaretçi */
+    border: none; /* Kenarlık kaldırma */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+
+}
+
+.inyoutb:hover{
+    transform: scale(1.1); /* Hover sırasında %10 büyüme */
+    background-color: #4c8ae6; /* Hover sırasında renk değişimi */
+}
+
+.telegram{
+    padding-left: 380px;
+    padding-top: 15px;
+}
+.intelg{
+    width: 750px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #84c1e9;
+    cursor: pointer; /* İmleç üzerinde iken işaretçi */
+    border: none; /* Kenarlık kaldırma */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Büyüme animasyonu */
+}
+.intelg:hover{
+ transform: scale(1.1); /* Hover sırasında %10 büyüme */
+ background-color: #4c8ae6; /* Hover sırasında renk değişimi */
+}
+
+
+.foto{
+  text-align: center;
+   position: relative;
+  top: 90px;
+}
+.img{
+    border-radius: 50px;
+    
+}
+.tit{
+    text-align: center;
+    position: relative;
+    top:90px;
+}
+.sophie{
+   text-align: center;
+   position: relative;
+   top: 100px;
+}
+
+@keyframes ghostEffect {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Aşağıdan yukarıya hareket */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Orijinal konumuna gelir */
+    }
+}
+.img, .tit, .sophie, .instagram, .youtube, .telegram {
+    animation: ghostEffect 1s ease-in-out;
+}
+
+.img {
+    display: block;
+    margin: 20px auto; /* Ortalamak için */
+    max-width: 100%;
+    height: auto;
+}
+
+.tit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sophie {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1); /* Büyüme efekti */
+    background-color: #FF5733; /* Renk değişimi */
+}
+
+.author {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.text {
+    color: #999;
+}
+
